@@ -89,7 +89,7 @@ class ItemEnterEventListener(EventListener):
             raise
 
     def killall(self, extension, keyword):
-        cmd = ['killall', keyword]
+        cmd = ['killall', '-r', keyword]
         logger.info(' '.join(cmd))
 
         try:
